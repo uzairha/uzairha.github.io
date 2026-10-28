@@ -169,3 +169,15 @@ footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border
 }
 
 .tabs::-webkit-scrollbar { display: none; }
+
+/* project detail pages */
+.page { padding-top: 24px; }
+.back { display: inline-block; margin-bottom: 16px; font-size: 14px; }
+.readme h3 { margin: 24px 0 8px; font-size: 20px; font-weight: 600; line-height: 1.25; }
+.readme .chips { margin-bottom: 12px; }
+.readme .note { font-size: 14px; color: var(--muted); }
+.steps { margin: 0 0 16px; padding-left: 24px; display: grid; gap: 8px; max-width: 68ch; font-size: 16px; }
+.btn.inline { display: inline-block; width: auto; }
+.box-h .tag { margin-left: auto; }
+a.logo { text-decoration: none; }
+a.logo:hover { text-decoration: none; background: rgba(255,255,255,.1); }

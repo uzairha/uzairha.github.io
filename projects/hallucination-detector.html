@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hallucination Detector · Uzair Hamid</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="logo" href="../" aria-label="Back to portfolio">UH</a>
+    <div class="crumb"><a href="../" style="color:#e6edf3">uzairha</a> <span style="color:#9198a1">/</span> hallucination-detector</div>
+  </div>
+</header>
+
+<div class="wrap page">
+  <a class="back" href="../#projects">← Back to portfolio</a>
+
+  <section class="box">
+    <div class="box-h"><b>hallucination-detector</b> / README.md <span class="tag">Public</span></div>
+    <div class="readme">
+      <h2>Hallucination Detector</h2>
+      <p>A Streamlit app that fact-checks AI-generated answers against a curated CS and AI knowledge base. Paste any AI response, and the app extracts factual claims, retrieves relevant evidence via semantic search, and gives each claim a verdict: <code>Supported</code>, <code>Weakly Supported</code> or <code>Unsupported</code>.</p>
+      <p><a class="btn inline" href="https://github.com/uzairha/hallucination-detector">View source on GitHub</a></p>
+
+      <h3>How it works</h3>
+      <ol class="steps">
+        <li><b>Claim extraction.</b> GPT-4o-mini parses the AI answer into discrete factual claims.</li>
+        <li><b>Semantic retrieval.</b> Each claim is embedded and matched against a FAISS index built from the knowledge base.</li>
+        <li><b>Verification.</b> GPT-4o-mini evaluates each claim against the retrieved evidence.</li>
+        <li><b>Scoring.</b> A hallucination score from 0 to 1 is computed and a verdict is shown.</li>
+      </ol>
+
+      <h3>Knowledge base</h3>
+      <p>Covers 19 core CS and AI topics: algorithms, data structures, databases, operating systems, networking, software engineering, testing, Git and CI/CD, cloud and DevOps, web development, cybersecurity, machine learning, deep learning, transformers, LLMs, embeddings, vector databases, RAG and AI safety. Documents are stored as plain text files, with references for each one.</p>
+
+      <h3>Stack</h3>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">OpenAI GPT-4o-mini</span><span class="chip">sentence-transformers</span><span class="chip">FAISS</span>
+      </div>
+      <p class="note">Embeddings use <code>all-MiniLM-L6-v2</code>. Documents are split into overlapping word chunks before indexing.</p>
+    </div>
+  </section>
+
+  <footer>Uzair Hamid · Software engineer · Los Angeles, CA</footer>
+</div>
+</body>
+</html>
