@@ -21,19 +21,29 @@
     <div class="box-h"><b>devpulse-ai</b> / README.md <span class="tag">Public</span></div>
     <div class="readme">
       <h2>DevPulse AI</h2>
-      <p>A full-stack DevOps platform for issue tracking and incident management, with an AI pipeline that clusters errors and suggests fixes.</p>
+      <p>AI-powered developer analytics. Connect your GitHub repositories and get insight into PR health, review turnaround, commit patterns and weekly engineering trends, with an AI assistant that answers questions about your repo data.</p>
       <p><a class="btn inline" href="https://github.com/uzairha/devpulse-ai">View source on GitHub</a></p>
 
-      <h3>Highlights</h3>
+      <h3>Features</h3>
       <ul class="steps">
-        <li>30+ REST endpoints with role-based access control.</li>
-        <li>Processes 100K+ log entries to find root causes.</li>
-        <li>Deployed on AWS with Docker, CI/CD and 150+ tests.</li>
+        <li><b>Auth.</b> Email and password with bcrypt and JWT, plus GitHub OAuth.</li>
+        <li><b>Repositories.</b> Connect any GitHub repo, with manual and webhook-triggered sync.</li>
+        <li><b>PR analytics.</b> Merge rate, time to merge, review turnaround, weekly throughput and a stale-PR list.</li>
+        <li><b>Commit analytics.</b> Frequency, contributors, an activity heatmap and Conventional Commits compliance.</li>
+        <li><b>AI.</b> PR summaries, weekly engineering reports, a 0 to 100 repo health score and chat over your repo data.</li>
+        <li><b>UX.</b> Light and dark theme, custom date ranges, CSV and JSON export.</li>
+      </ul>
+
+      <h3>Engineering</h3>
+      <ul class="steps">
+        <li>293 automated tests: 146 on the server and 147 on the client.</li>
+        <li>GitHub Actions CI runs both test suites, the production build, the Docker image builds and Terraform validation.</li>
+        <li>AWS infrastructure is written in Terraform (ECS Fargate, RDS, ElastiCache). It has not been applied, so the app is not running on AWS.</li>
       </ul>
 
       <h3>Stack</h3>
       <div class="chips">
-        <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">FastAPI</span><span class="chip">Next.js</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Celery</span>
+        <span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">Redis</span><span class="chip">BullMQ</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">OpenAI API</span>
       </div>
     </div>
   </section>
